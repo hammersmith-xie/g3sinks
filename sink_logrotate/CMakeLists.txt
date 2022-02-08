@@ -2,7 +2,7 @@ project(logrotate)
 
 # ===============================
 # boost filesystem + boost system 
-set( Boost_USE_STATIC_LIBS ON ) 
+set( Boost_USE_STATIC_LIBS OFF ) 
 set( Boost_USE_MULTITHREAD ON ) 
 find_package( Boost REQUIRED COMPONENTS filesystem system ) 
 message( "boost [filesystem, system] found: ${Boost_FOUND} ")
